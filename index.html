@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Landing</title>
+
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<body class="bg-black text-white">
+
+    <!-- NAVBAR -->
+    <header class="absolute w-full z-20">
+        <nav class="flex items-start justify-between px-6 py-4">
+
+            <!-- LOGO -->
+            <img src="./IMAGE (6).png" alt="">
+
+            <!-- MENU (desktop) -->
+            <ul class="hidden md:flex gap-8">
+                <li><a href="#" class="hover:text-blue-400">Sounds</a></li>
+                <li><a href="#" class="hover:text-blue-400">Skills</a></li>
+                <li><a href="#" class="hover:text-blue-400">Plugins</a></li>
+                <li><a href="#" class="hover:text-blue-400">Studio</a></li>
+                <li><a href="#" class="hover:text-blue-400">Community</a></li>
+                <li><a href="#" class="hover:text-blue-400">Pricing</a></li>
+            </ul>
+
+            <!-- SIGN UP -->
+            <button class="bg-white  px-4 py-2 rounded hover:bg-white-700 text-black">
+                Sign up
+            </button>
+            <!-- HAMBURGER -->
+            <button id="menu-btn" class="md:hidden text-2xl">
+                ☰
+            </button>
+
+        </nav>
+
+        <!-- MOBILE MENU -->
+        <div id="mobile-menu" class="hidden flex-col bg-black text-center py-6 space-y-4 md:hidden">
+
+            <a href="#" class="block">Sounds</a>
+            <a href="#" class="block">Skills</a>
+            <a href="#" class="block">Plugins</a>
+            <a href="#" class="block">Studio</a>
+            <a href="#" class="block">Community</a>
+            <a href="#" class="block">Pricing</a>
+
+            <button class="border px-4 py-1 rounded w-32 mx-auto">
+                Sign up
+            </button>
+
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="h-screen bg-cover bg-center flex items-center" style="background-image:url('IMAGE.png')">
+
+        <div class="px-4 md:px-16 max-w-2xl">
+
+            <h1 class="text-3xl md:text-5xl font-bold leading-tight">
+                Step into the producer’s playground
+            </h1>
+
+            <p class="mt-4 text-gray-300 text-sm md:text-lg">
+                Explore the world’s best sample library and an <br> unmatched marketplace of plugins and DAWs.
+            </p>
+
+            <button class="mt-6 bg-blue-600 px-5 py-2 md:px-6 md:py-3 rounded">
+                Try free
+            </button>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="py-16 bg-[#0b0b0b]">
+
+        <div class="max-w-6xl mx-auto px-4 md:px-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+            <div>
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">
+                    A catalog so deep, it’s dangerous.
+                </h2>
+
+                <p class="text-gray-400 mb-6 text-sm md:text-base">
+                    Expertly created and curated samples in any style <br> imaginable. Start swimming in sound.
+                </p>
+
+                <button class="bg-blue-600 px-5 py-2 rounded">
+                    Explore Sounds
+                </button>
+            </div>
+
+            <img class="rounded-lg w-full" src="./IMAGE (1).png">
+
+        </div>
+
+    </section>
+
+    <!-- WORKFLOW -->
+    <section class="py-16 bg-black">
+
+        <div class="max-w-6xl mx-auto px-4 md:px-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+            <img class="rounded-lg w-full" src="./IMAGE (2).png">
+
+            <div>
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">
+                    A workflow that actually flows
+                </h2>
+
+                <p class="text-gray-400 mb-6 text-sm md:text-base">
+                    Preview samples in your track’s key and  tempo, drag and <br>  drop sounds into your DAW, and organize your
+                    favorite samples, MIDI and presets in one place.
+                </p>
+
+                <button class="bg-blue-600 px-5 py-2 rounded">
+                    Workflow
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="py-16 bg-[#0b0b0b]">
+
+        <div class="max-w-6xl mx-auto px-4 md:px-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-gray-200 w-80 p-8 text-center rounded-lg">
+                <img class="w-48 h-48 mx-auto rounded-full object-cover" src="./IMAGE (3).png">
+
+                <p class="mt-6 text-gray-800 text-lg leading-relaxed">
+                    I can always find what I’m looking for on Splice, whether it’s the exact sound I want or just a bit
+                    of inspiration.
+                </p>
+
+                <h3 class="mt-4 text-gray-500">Andrew Huang</h3>
+            </div>
+
+            <div class="bg-gray-200 w-80 p-8 text-center rounded-lg">
+                <img class="w-48 h-48 mx-auto rounded-full object-cover" src="./IMAGE (4).png">
+
+                <p class="mt-6 text-gray-800 text-lg leading-relaxed">
+                    Finally a way to buy plugins that works. By paying a little at a time, producers can get legit
+                    access to the top VSTs.
+                </p>
+
+                <h3 class="mt-4 text-gray-500">KSHMR</h3>
+            </div>
+
+            <div class="bg-gray-200 w-80 p-8 text-center rounded-lg">
+
+                <img src="./IMAGE (5).png" class="w-48 h-48 mx-auto rounded-full object-cover" />
+
+                <p class="mt-6 text-gray-800 text-lg leading-relaxed">
+                    It’s been fun to dive into Splice’s creator community and explore
+                    tools that support my own creative process.
+                </p>
+
+                <h4 class="mt-4 text-gray-500">
+                    Kesha Lee
+                </h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-700 text-gray-300 py-6">
+
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-evenly items-center px-5 text-sm">
+
+            <!-- Left -->
+            <p>© 2022 Splice.com All Rights Reserved</p>
+
+            <!-- Right -->
+            <ul class="flex gap-6 mt-4 md:mt-0">
+                <li><a href="#" class="hover:text-white">Terms of Use</a></li>
+                <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-white">Jobs</a></li>
+                <li><a href="#" class="hover:text-white">Contact</a></li>
+                <li><a href="#" class="hover:text-white">Help</a></li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
